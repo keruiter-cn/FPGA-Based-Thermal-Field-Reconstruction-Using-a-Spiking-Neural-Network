@@ -1,0 +1,1783 @@
+{
+    "ltx_root": {
+        "version": 4,
+        "minor": 0,
+        "ltx_data": [
+            {
+                "name": "EDA_PROBESET",
+                "active": true,
+                "debug_cores": [
+                    {
+                        "type": "XSDB_V3",
+                        "name": "dbg_hub",
+                        "spec": "labtools_xsdbm_v3",
+                        "clk_input_freq_hz": "125000003"
+                    },
+                    {
+                        "type": "VIO_V2",
+                        "name": "u_eth_top/master_wrapper_inst/vio_0",
+                        "spec": "labtools_vio_v3",
+                        "ipName": "vio",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 0,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "87598755F3535987BE328CEA8105E09B",
+                        "pins": [
+                            {
+                                "name": "probe_in0",
+                                "id": 0,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "u_eth_top/master_wrapper_inst/inband_link_status",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_in1",
+                                "id": 1,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "u_eth_top/master_wrapper_inst/inband_clock_speed",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "u_eth_top/master_wrapper_inst/inband_clock_speed[1]"
+                                            },
+                                            {
+                                                "name": "u_eth_top/master_wrapper_inst/inband_clock_speed[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_in2",
+                                "id": 2,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "u_eth_top/master_wrapper_inst/inband_duplex_status",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_in3",
+                                "id": 3,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "u_eth_top/master_wrapper_inst/speedis100",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_in4",
+                                "id": 4,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 4,
+                                "nets": [
+                                    {
+                                        "name": "u_eth_top/master_wrapper_inst/speedis10100",
+                                        "isBus": false
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "XSDBS_V2",
+                        "name": "u_ddr4_0",
+                        "spec": "labtools_xsdbslavelib_v2",
+                        "ipName": "DDR4_SDRAM",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 1,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "3FD6D9342C58576C8B8336D6FDF59D81"
+                    },
+                    {
+                        "type": "ILA_V3",
+                        "name": "u_ila_0",
+                        "spec": "labtools_ila_v6",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 2,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "23E7D65A79BC59F7BC47406C1714DFAE",
+                        "pins": [
+                            {
+                                "name": "probe0",
+                                "id": 5,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 16,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "u_eth_top/eth_receive_inst/bram_write_addr",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "u_eth_top/eth_receive_inst/bram_write_addr[16]"
+                                            },
+                                            {
+                                                "name": "u_eth_top/eth_receive_inst/bram_write_addr[15]"
+                                            },
+                                            {
+                                                "name": "u_eth_top/eth_receive_inst/bram_write_addr[14]"
+                                            },
+                                            {
+                                                "name": "u_eth_top/eth_receive_inst/bram_write_addr[13]"
+                                            },
+                                            {
+                                                "name": "u_eth_top/eth_receive_inst/bram_write_addr[12]"
+                                            },
+                                            {
+                                                "name": "u_eth_top/eth_receive_inst/bram_write_addr[11]"
+                                            },
+                                            {
+                                                "name": "u_eth_top/eth_receive_inst/bram_write_addr[10]"
+                                            },
+                                            {
+                                                "name": "u_eth_top/eth_receive_inst/bram_write_addr[9]"
+                                            },
+                                            {
+                                                "name": "u_eth_top/eth_receive_inst/bram_write_addr[8]"
+                                            },
+                                            {
+                                                "name": "u_eth_top/eth_receive_inst/bram_write_addr[7]"
+                                            },
+                                            {
+                                                "name": "u_eth_top/eth_receive_inst/bram_write_addr[6]"
+                                            },
+                                            {
+                                                "name": "u_eth_top/eth_receive_inst/bram_write_addr[5]"
+                                            },
+                                            {
+                                                "name": "u_eth_top/eth_receive_inst/bram_write_addr[4]"
+                                            },
+                                            {
+                                                "name": "u_eth_top/eth_receive_inst/bram_write_addr[3]"
+                                            },
+                                            {
+                                                "name": "u_eth_top/eth_receive_inst/bram_write_addr[2]"
+                                            },
+                                            {
+                                                "name": "u_eth_top/eth_receive_inst/bram_write_addr[1]"
+                                            },
+                                            {
+                                                "name": "u_eth_top/eth_receive_inst/bram_write_addr[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe1",
+                                "id": 6,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 19,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "u_eth_top/eth_receive_inst/eth_rx_fms_count",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "u_eth_top/eth_receive_inst/eth_rx_fms_count[19]"
+                                            },
+                                            {
+                                                "name": "u_eth_top/eth_receive_inst/eth_rx_fms_count[18]"
+                                            },
+                                            {
+                                                "name": "u_eth_top/eth_receive_inst/eth_rx_fms_count[17]"
+                                            },
+                                            {
+                                                "name": "u_eth_top/eth_receive_inst/eth_rx_fms_count[16]"
+                                            },
+                                            {
+                                                "name": "u_eth_top/eth_receive_inst/eth_rx_fms_count[15]"
+                                            },
+                                            {
+                                                "name": "u_eth_top/eth_receive_inst/eth_rx_fms_count[14]"
+                                            },
+                                            {
+                                                "name": "u_eth_top/eth_receive_inst/eth_rx_fms_count[13]"
+                                            },
+                                            {
+                                                "name": "u_eth_top/eth_receive_inst/eth_rx_fms_count[12]"
+                                            },
+                                            {
+                                                "name": "u_eth_top/eth_receive_inst/eth_rx_fms_count[11]"
+                                            },
+                                            {
+                                                "name": "u_eth_top/eth_receive_inst/eth_rx_fms_count[10]"
+                                            },
+                                            {
+                                                "name": "u_eth_top/eth_receive_inst/eth_rx_fms_count[9]"
+                                            },
+                                            {
+                                                "name": "u_eth_top/eth_receive_inst/eth_rx_fms_count[8]"
+                                            },
+                                            {
+                                                "name": "u_eth_top/eth_receive_inst/eth_rx_fms_count[7]"
+                                            },
+                                            {
+                                                "name": "u_eth_top/eth_receive_inst/eth_rx_fms_count[6]"
+                                            },
+                                            {
+                                                "name": "u_eth_top/eth_receive_inst/eth_rx_fms_count[5]"
+                                            },
+                                            {
+                                                "name": "u_eth_top/eth_receive_inst/eth_rx_fms_count[4]"
+                                            },
+                                            {
+                                                "name": "u_eth_top/eth_receive_inst/eth_rx_fms_count[3]"
+                                            },
+                                            {
+                                                "name": "u_eth_top/eth_receive_inst/eth_rx_fms_count[2]"
+                                            },
+                                            {
+                                                "name": "u_eth_top/eth_receive_inst/eth_rx_fms_count[1]"
+                                            },
+                                            {
+                                                "name": "u_eth_top/eth_receive_inst/eth_rx_fms_count[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 7,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 7,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "u_eth_top/eth_transmit_inst/buf_read_addr_counter",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "u_eth_top/eth_transmit_inst/buf_read_addr_counter[7]"
+                                            },
+                                            {
+                                                "name": "u_eth_top/eth_transmit_inst/buf_read_addr_counter[6]"
+                                            },
+                                            {
+                                                "name": "u_eth_top/eth_transmit_inst/buf_read_addr_counter[5]"
+                                            },
+                                            {
+                                                "name": "u_eth_top/eth_transmit_inst/buf_read_addr_counter[4]"
+                                            },
+                                            {
+                                                "name": "u_eth_top/eth_transmit_inst/buf_read_addr_counter[3]"
+                                            },
+                                            {
+                                                "name": "u_eth_top/eth_transmit_inst/buf_read_addr_counter[2]"
+                                            },
+                                            {
+                                                "name": "u_eth_top/eth_transmit_inst/buf_read_addr_counter[1]"
+                                            },
+                                            {
+                                                "name": "u_eth_top/eth_transmit_inst/buf_read_addr_counter[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "ILA_V3",
+                        "name": "u_ila_1",
+                        "spec": "labtools_ila_v6",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 3,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "3B505A030738513C98471D25F5B1F848",
+                        "pins": [
+                            {
+                                "name": "probe0",
+                                "id": 8,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "u_bram_write_control/fms_ts_cs",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "u_bram_write_control/fms_ts_cs[1]"
+                                            },
+                                            {
+                                                "name": "u_bram_write_control/fms_ts_cs[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe1",
+                                "id": 9,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 15,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "u_pec/wbc_weight_din",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "u_pec/wbc_weight_din[15]"
+                                            },
+                                            {
+                                                "name": "u_pec/wbc_weight_din[14]"
+                                            },
+                                            {
+                                                "name": "u_pec/wbc_weight_din[13]"
+                                            },
+                                            {
+                                                "name": "u_pec/wbc_weight_din[12]"
+                                            },
+                                            {
+                                                "name": "u_pec/wbc_weight_din[11]"
+                                            },
+                                            {
+                                                "name": "u_pec/wbc_weight_din[10]"
+                                            },
+                                            {
+                                                "name": "u_pec/wbc_weight_din[9]"
+                                            },
+                                            {
+                                                "name": "u_pec/wbc_weight_din[8]"
+                                            },
+                                            {
+                                                "name": "u_pec/wbc_weight_din[7]"
+                                            },
+                                            {
+                                                "name": "u_pec/wbc_weight_din[6]"
+                                            },
+                                            {
+                                                "name": "u_pec/wbc_weight_din[5]"
+                                            },
+                                            {
+                                                "name": "u_pec/wbc_weight_din[4]"
+                                            },
+                                            {
+                                                "name": "u_pec/wbc_weight_din[3]"
+                                            },
+                                            {
+                                                "name": "u_pec/wbc_weight_din[2]"
+                                            },
+                                            {
+                                                "name": "u_pec/wbc_weight_din[1]"
+                                            },
+                                            {
+                                                "name": "u_pec/wbc_weight_din[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 10,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 15,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "brc_fms_read_addr",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "brc_fms_read_addr[15]"
+                                            },
+                                            {
+                                                "name": "brc_fms_read_addr[14]"
+                                            },
+                                            {
+                                                "name": "brc_fms_read_addr[13]"
+                                            },
+                                            {
+                                                "name": "brc_fms_read_addr[12]"
+                                            },
+                                            {
+                                                "name": "brc_fms_read_addr[11]"
+                                            },
+                                            {
+                                                "name": "brc_fms_read_addr[10]"
+                                            },
+                                            {
+                                                "name": "brc_fms_read_addr[9]"
+                                            },
+                                            {
+                                                "name": "brc_fms_read_addr[8]"
+                                            },
+                                            {
+                                                "name": "brc_fms_read_addr[7]"
+                                            },
+                                            {
+                                                "name": "brc_fms_read_addr[6]"
+                                            },
+                                            {
+                                                "name": "brc_fms_read_addr[5]"
+                                            },
+                                            {
+                                                "name": "brc_fms_read_addr[4]"
+                                            },
+                                            {
+                                                "name": "brc_fms_read_addr[3]"
+                                            },
+                                            {
+                                                "name": "brc_fms_read_addr[2]"
+                                            },
+                                            {
+                                                "name": "brc_fms_read_addr[1]"
+                                            },
+                                            {
+                                                "name": "brc_fms_read_addr[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe3",
+                                "id": 11,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "u_pec/wvbrc_din_vld",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "u_pec/wvbrc_din_vld[1]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe4",
+                                "id": 12,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 7,
+                                "portIndex": 4,
+                                "nets": [
+                                    {
+                                        "name": "u_pec/wvraddr",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "u_pec/wvraddr[7]"
+                                            },
+                                            {
+                                                "name": "u_pec/wvraddr[6]"
+                                            },
+                                            {
+                                                "name": "u_pec/wvraddr[5]"
+                                            },
+                                            {
+                                                "name": "u_pec/wvraddr[4]"
+                                            },
+                                            {
+                                                "name": "u_pec/wvraddr[3]"
+                                            },
+                                            {
+                                                "name": "u_pec/wvraddr[2]"
+                                            },
+                                            {
+                                                "name": "u_pec/wvraddr[1]"
+                                            },
+                                            {
+                                                "name": "u_pec/wvraddr[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe5",
+                                "id": 13,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 31,
+                                "portIndex": 5,
+                                "nets": [
+                                    {
+                                        "name": "bwc_fms_spike_dout",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "bwc_fms_spike_dout[31]"
+                                            },
+                                            {
+                                                "name": "bwc_fms_spike_dout[30]"
+                                            },
+                                            {
+                                                "name": "bwc_fms_spike_dout[29]"
+                                            },
+                                            {
+                                                "name": "bwc_fms_spike_dout[28]"
+                                            },
+                                            {
+                                                "name": "bwc_fms_spike_dout[27]"
+                                            },
+                                            {
+                                                "name": "bwc_fms_spike_dout[26]"
+                                            },
+                                            {
+                                                "name": "bwc_fms_spike_dout[25]"
+                                            },
+                                            {
+                                                "name": "bwc_fms_spike_dout[24]"
+                                            },
+                                            {
+                                                "name": "bwc_fms_spike_dout[23]"
+                                            },
+                                            {
+                                                "name": "bwc_fms_spike_dout[22]"
+                                            },
+                                            {
+                                                "name": "bwc_fms_spike_dout[21]"
+                                            },
+                                            {
+                                                "name": "bwc_fms_spike_dout[20]"
+                                            },
+                                            {
+                                                "name": "bwc_fms_spike_dout[19]"
+                                            },
+                                            {
+                                                "name": "bwc_fms_spike_dout[18]"
+                                            },
+                                            {
+                                                "name": "bwc_fms_spike_dout[17]"
+                                            },
+                                            {
+                                                "name": "bwc_fms_spike_dout[16]"
+                                            },
+                                            {
+                                                "name": "bwc_fms_spike_dout[15]"
+                                            },
+                                            {
+                                                "name": "bwc_fms_spike_dout[14]"
+                                            },
+                                            {
+                                                "name": "bwc_fms_spike_dout[13]"
+                                            },
+                                            {
+                                                "name": "bwc_fms_spike_dout[12]"
+                                            },
+                                            {
+                                                "name": "bwc_fms_spike_dout[11]"
+                                            },
+                                            {
+                                                "name": "bwc_fms_spike_dout[10]"
+                                            },
+                                            {
+                                                "name": "bwc_fms_spike_dout[9]"
+                                            },
+                                            {
+                                                "name": "bwc_fms_spike_dout[8]"
+                                            },
+                                            {
+                                                "name": "bwc_fms_spike_dout[7]"
+                                            },
+                                            {
+                                                "name": "bwc_fms_spike_dout[6]"
+                                            },
+                                            {
+                                                "name": "bwc_fms_spike_dout[5]"
+                                            },
+                                            {
+                                                "name": "bwc_fms_spike_dout[4]"
+                                            },
+                                            {
+                                                "name": "bwc_fms_spike_dout[3]"
+                                            },
+                                            {
+                                                "name": "bwc_fms_spike_dout[2]"
+                                            },
+                                            {
+                                                "name": "bwc_fms_spike_dout[1]"
+                                            },
+                                            {
+                                                "name": "bwc_fms_spike_dout[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe6",
+                                "id": 14,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 15,
+                                "portIndex": 6,
+                                "nets": [
+                                    {
+                                        "name": "bwc_fms_write_addr",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "bwc_fms_write_addr[15]"
+                                            },
+                                            {
+                                                "name": "bwc_fms_write_addr[14]"
+                                            },
+                                            {
+                                                "name": "bwc_fms_write_addr[13]"
+                                            },
+                                            {
+                                                "name": "bwc_fms_write_addr[12]"
+                                            },
+                                            {
+                                                "name": "bwc_fms_write_addr[11]"
+                                            },
+                                            {
+                                                "name": "bwc_fms_write_addr[10]"
+                                            },
+                                            {
+                                                "name": "bwc_fms_write_addr[9]"
+                                            },
+                                            {
+                                                "name": "bwc_fms_write_addr[8]"
+                                            },
+                                            {
+                                                "name": "bwc_fms_write_addr[7]"
+                                            },
+                                            {
+                                                "name": "bwc_fms_write_addr[6]"
+                                            },
+                                            {
+                                                "name": "bwc_fms_write_addr[5]"
+                                            },
+                                            {
+                                                "name": "bwc_fms_write_addr[4]"
+                                            },
+                                            {
+                                                "name": "bwc_fms_write_addr[3]"
+                                            },
+                                            {
+                                                "name": "bwc_fms_write_addr[2]"
+                                            },
+                                            {
+                                                "name": "bwc_fms_write_addr[1]"
+                                            },
+                                            {
+                                                "name": "bwc_fms_write_addr[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe7",
+                                "id": 15,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 7,
+                                "nets": [
+                                    {
+                                        "name": "u_fms/bwc_ts_cs",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "u_fms/bwc_ts_cs[1]"
+                                            },
+                                            {
+                                                "name": "u_fms/bwc_ts_cs[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe8",
+                                "id": 16,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 8,
+                                "nets": [
+                                    {
+                                        "name": "u_fms/brc_ts_cs",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "u_fms/brc_ts_cs[1]"
+                                            },
+                                            {
+                                                "name": "u_fms/brc_ts_cs[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe9",
+                                "id": 17,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 15,
+                                "portIndex": 9,
+                                "nets": [
+                                    {
+                                        "name": "u_fms/bwc_wr_addr",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "u_fms/bwc_wr_addr[15]"
+                                            },
+                                            {
+                                                "name": "u_fms/bwc_wr_addr[14]"
+                                            },
+                                            {
+                                                "name": "u_fms/bwc_wr_addr[13]"
+                                            },
+                                            {
+                                                "name": "u_fms/bwc_wr_addr[12]"
+                                            },
+                                            {
+                                                "name": "u_fms/bwc_wr_addr[11]"
+                                            },
+                                            {
+                                                "name": "u_fms/bwc_wr_addr[10]"
+                                            },
+                                            {
+                                                "name": "u_fms/bwc_wr_addr[9]"
+                                            },
+                                            {
+                                                "name": "u_fms/bwc_wr_addr[8]"
+                                            },
+                                            {
+                                                "name": "u_fms/bwc_wr_addr[7]"
+                                            },
+                                            {
+                                                "name": "u_fms/bwc_wr_addr[6]"
+                                            },
+                                            {
+                                                "name": "u_fms/bwc_wr_addr[5]"
+                                            },
+                                            {
+                                                "name": "u_fms/bwc_wr_addr[4]"
+                                            },
+                                            {
+                                                "name": "u_fms/bwc_wr_addr[3]"
+                                            },
+                                            {
+                                                "name": "u_fms/bwc_wr_addr[2]"
+                                            },
+                                            {
+                                                "name": "u_fms/bwc_wr_addr[1]"
+                                            },
+                                            {
+                                                "name": "u_fms/bwc_wr_addr[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe10",
+                                "id": 18,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 2,
+                                "portIndex": 10,
+                                "nets": [
+                                    {
+                                        "name": "u_fms/w_brm_pong_wea",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "u_fms/w_brm_pong_wea[2]"
+                                            },
+                                            {
+                                                "name": "u_fms/w_brm_pong_wea[1]"
+                                            },
+                                            {
+                                                "name": "u_fms/w_brm_pong_wea[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe11",
+                                "id": 19,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 3,
+                                "portIndex": 11,
+                                "nets": [
+                                    {
+                                        "name": "u_ilc/cur_state",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "u_ilc/cur_state[3]",
+                                                "parentNetId": 147
+                                            },
+                                            {
+                                                "name": "u_ilc/cur_state[2]",
+                                                "parentNetId": 148
+                                            },
+                                            {
+                                                "name": "u_ilc/cur_state[1]",
+                                                "parentNetId": 149
+                                            },
+                                            {
+                                                "name": "u_ilc/cur_state[0]",
+                                                "parentNetId": 150
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe12",
+                                "id": 20,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 15,
+                                "portIndex": 12,
+                                "nets": [
+                                    {
+                                        "name": "u_ilc/bias",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "u_ilc/bias[15]"
+                                            },
+                                            {
+                                                "name": "u_ilc/bias[14]"
+                                            },
+                                            {
+                                                "name": "u_ilc/bias[13]"
+                                            },
+                                            {
+                                                "name": "u_ilc/bias[12]"
+                                            },
+                                            {
+                                                "name": "u_ilc/bias[11]"
+                                            },
+                                            {
+                                                "name": "u_ilc/bias[10]"
+                                            },
+                                            {
+                                                "name": "u_ilc/bias[9]"
+                                            },
+                                            {
+                                                "name": "u_ilc/bias[8]"
+                                            },
+                                            {
+                                                "name": "u_ilc/bias[7]"
+                                            },
+                                            {
+                                                "name": "u_ilc/bias[6]"
+                                            },
+                                            {
+                                                "name": "u_ilc/bias[5]"
+                                            },
+                                            {
+                                                "name": "u_ilc/bias[4]"
+                                            },
+                                            {
+                                                "name": "u_ilc/bias[3]"
+                                            },
+                                            {
+                                                "name": "u_ilc/bias[2]"
+                                            },
+                                            {
+                                                "name": "u_ilc/bias[1]"
+                                            },
+                                            {
+                                                "name": "u_ilc/bias[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe13",
+                                "id": 21,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 3,
+                                "portIndex": 13,
+                                "nets": [
+                                    {
+                                        "name": "u_ilc/out_ch_cnt",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "u_ilc/out_ch_cnt[3]"
+                                            },
+                                            {
+                                                "name": "u_ilc/out_ch_cnt[2]"
+                                            },
+                                            {
+                                                "name": "u_ilc/out_ch_cnt[1]"
+                                            },
+                                            {
+                                                "name": "u_ilc/out_ch_cnt[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe14",
+                                "id": 22,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 4,
+                                "portIndex": 14,
+                                "nets": [
+                                    {
+                                        "name": "u_ilc/layer_cnt",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "u_ilc/layer_cnt[4]"
+                                            },
+                                            {
+                                                "name": "u_ilc/layer_cnt[3]"
+                                            },
+                                            {
+                                                "name": "u_ilc/layer_cnt[2]"
+                                            },
+                                            {
+                                                "name": "u_ilc/layer_cnt[1]"
+                                            },
+                                            {
+                                                "name": "u_ilc/layer_cnt[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe15",
+                                "id": 23,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 2,
+                                "portIndex": 15,
+                                "nets": [
+                                    {
+                                        "name": "u_fms/w_brm_pong_ena",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "u_fms/w_brm_pong_ena[2]"
+                                            },
+                                            {
+                                                "name": "u_fms/w_brm_pong_ena[1]"
+                                            },
+                                            {
+                                                "name": "u_fms/w_brm_pong_ena[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe16",
+                                "id": 24,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 25,
+                                "portIndex": 16,
+                                "nets": [
+                                    {
+                                        "name": "u_pec/gen_pe[0].u_pe_inst/pe_acc_dout",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/pe_acc_dout[25]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/pe_acc_dout[24]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/pe_acc_dout[23]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/pe_acc_dout[22]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/pe_acc_dout[21]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/pe_acc_dout[20]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/pe_acc_dout[19]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/pe_acc_dout[18]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/pe_acc_dout[17]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/pe_acc_dout[16]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/pe_acc_dout[15]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/pe_acc_dout[14]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/pe_acc_dout[13]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/pe_acc_dout[12]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/pe_acc_dout[11]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/pe_acc_dout[10]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/pe_acc_dout[9]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/pe_acc_dout[8]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/pe_acc_dout[7]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/pe_acc_dout[6]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/pe_acc_dout[5]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/pe_acc_dout[4]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/pe_acc_dout[3]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/pe_acc_dout[2]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/pe_acc_dout[1]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/pe_acc_dout[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe17",
+                                "id": 25,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 31,
+                                "portIndex": 17,
+                                "nets": [
+                                    {
+                                        "name": "u_pec/gen_pe[0].u_pe_inst/brc_fms_spike",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/brc_fms_spike[31]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/brc_fms_spike[30]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/brc_fms_spike[29]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/brc_fms_spike[28]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/brc_fms_spike[27]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/brc_fms_spike[26]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/brc_fms_spike[25]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/brc_fms_spike[24]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/brc_fms_spike[23]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/brc_fms_spike[22]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/brc_fms_spike[21]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/brc_fms_spike[20]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/brc_fms_spike[19]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/brc_fms_spike[18]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/brc_fms_spike[17]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/brc_fms_spike[16]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/brc_fms_spike[15]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/brc_fms_spike[14]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/brc_fms_spike[13]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/brc_fms_spike[12]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/brc_fms_spike[11]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/brc_fms_spike[10]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/brc_fms_spike[9]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/brc_fms_spike[8]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/brc_fms_spike[7]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/brc_fms_spike[6]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/brc_fms_spike[5]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/brc_fms_spike[4]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/brc_fms_spike[3]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/brc_fms_spike[2]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/brc_fms_spike[1]"
+                                            },
+                                            {
+                                                "name": "u_pec/gen_pe[0].u_pe_inst/brc_fms_spike[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe18",
+                                "id": 26,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 18,
+                                "nets": [
+                                    {
+                                        "name": "u_pec/brc_fire_enable",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe19",
+                                "id": 27,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 19,
+                                "nets": [
+                                    {
+                                        "name": "u_pec/brc_fire_enable_dly",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe20",
+                                "id": 28,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 20,
+                                "nets": [
+                                    {
+                                        "name": "brc_fms_read_en",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe21",
+                                "id": 29,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 21,
+                                "nets": [
+                                    {
+                                        "name": "brc_pec_fire_enable",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe22",
+                                "id": 30,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 22,
+                                "nets": [
+                                    {
+                                        "name": "brc_pec_row_end_vld",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe23",
+                                "id": 31,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 23,
+                                "nets": [
+                                    {
+                                        "name": "brc_pec_ts_end_vld",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe24",
+                                "id": 32,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 24,
+                                "nets": [
+                                    {
+                                        "name": "u_fms/bwc_wr_en",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe25",
+                                "id": 33,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 25,
+                                "nets": [
+                                    {
+                                        "name": "u_pec/bypass",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe26",
+                                "id": 34,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 26,
+                                "nets": [
+                                    {
+                                        "name": "ilc_pec_ping_or_pong",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe27",
+                                "id": 35,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 27,
+                                "nets": [
+                                    {
+                                        "name": "itlc_avgpool_or_not",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe28",
+                                "id": 36,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 28,
+                                "nets": [
+                                    {
+                                        "name": "itlc_conv_or_not",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe29",
+                                "id": 37,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 29,
+                                "nets": [
+                                    {
+                                        "name": "itlc_convt_or_not",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe30",
+                                "id": 38,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 30,
+                                "nets": [
+                                    {
+                                        "name": "itlc_first_layer_or_not",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe31",
+                                "id": 39,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 31,
+                                "nets": [
+                                    {
+                                        "name": "itlc_last_layer_or_not",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe32",
+                                "id": 40,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 32,
+                                "nets": [
+                                    {
+                                        "name": "pec_bwc_spike_vld",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe33",
+                                "id": 41,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 33,
+                                "nets": [
+                                    {
+                                        "name": "u_fms/r_brm_rd_ping_or_pong",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe34",
+                                "id": 42,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 34,
+                                "nets": [
+                                    {
+                                        "name": "u_pec/gen_pe[0].u_pe_inst/rfire_compare",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe35",
+                                "id": 43,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 35,
+                                "nets": [
+                                    {
+                                        "name": "u_pec/gen_pe[0].u_pe_inst/rstage2_fire_vld",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe36",
+                                "id": 44,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 36,
+                                "nets": [
+                                    {
+                                        "name": "top_slide_over",
+                                        "isBus": false
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "parent_nets": [
+                    {
+                        "id": 147,
+                        "name": "u_ilc/cur_state[3]",
+                        "state_reg": [
+                            {
+                                "name": "u_ilc/cur_state_reg[3]",
+                                "states": [
+                                    {
+                                        "name": "S_IDLE",
+                                        "val": "0000"
+                                    },
+                                    {
+                                        "name": "S_INIT_WEIGHT",
+                                        "val": "0001"
+                                    },
+                                    {
+                                        "name": "S_INIT_FMS",
+                                        "val": "0010"
+                                    },
+                                    {
+                                        "name": "S_INIT_MOVE_WEIGHT",
+                                        "val": "0011"
+                                    },
+                                    {
+                                        "name": "S_ITLC",
+                                        "val": "0100"
+                                    },
+                                    {
+                                        "name": "S_MOVE_WEIGHT",
+                                        "val": "0101"
+                                    },
+                                    {
+                                        "name": "S_WAIT_WEIGHT",
+                                        "val": "0110"
+                                    },
+                                    {
+                                        "name": "S_WAIT_INFER",
+                                        "val": "0111"
+                                    },
+                                    {
+                                        "name": "S_OUT_FMS",
+                                        "val": "1000"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 148,
+                        "name": "u_ilc/cur_state[2]",
+                        "state_reg": [
+                            {
+                                "name": "u_ilc/cur_state_reg[2]",
+                                "states": [
+                                    {
+                                        "name": "S_IDLE",
+                                        "val": "0000"
+                                    },
+                                    {
+                                        "name": "S_INIT_WEIGHT",
+                                        "val": "0001"
+                                    },
+                                    {
+                                        "name": "S_INIT_FMS",
+                                        "val": "0010"
+                                    },
+                                    {
+                                        "name": "S_INIT_MOVE_WEIGHT",
+                                        "val": "0011"
+                                    },
+                                    {
+                                        "name": "S_ITLC",
+                                        "val": "0100"
+                                    },
+                                    {
+                                        "name": "S_MOVE_WEIGHT",
+                                        "val": "0101"
+                                    },
+                                    {
+                                        "name": "S_WAIT_WEIGHT",
+                                        "val": "0110"
+                                    },
+                                    {
+                                        "name": "S_WAIT_INFER",
+                                        "val": "0111"
+                                    },
+                                    {
+                                        "name": "S_OUT_FMS",
+                                        "val": "1000"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 149,
+                        "name": "u_ilc/cur_state[1]",
+                        "state_reg": [
+                            {
+                                "name": "u_ilc/cur_state_reg[1]",
+                                "states": [
+                                    {
+                                        "name": "S_IDLE",
+                                        "val": "0000"
+                                    },
+                                    {
+                                        "name": "S_INIT_WEIGHT",
+                                        "val": "0001"
+                                    },
+                                    {
+                                        "name": "S_INIT_FMS",
+                                        "val": "0010"
+                                    },
+                                    {
+                                        "name": "S_INIT_MOVE_WEIGHT",
+                                        "val": "0011"
+                                    },
+                                    {
+                                        "name": "S_ITLC",
+                                        "val": "0100"
+                                    },
+                                    {
+                                        "name": "S_MOVE_WEIGHT",
+                                        "val": "0101"
+                                    },
+                                    {
+                                        "name": "S_WAIT_WEIGHT",
+                                        "val": "0110"
+                                    },
+                                    {
+                                        "name": "S_WAIT_INFER",
+                                        "val": "0111"
+                                    },
+                                    {
+                                        "name": "S_OUT_FMS",
+                                        "val": "1000"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 150,
+                        "name": "u_ilc/cur_state[0]",
+                        "state_reg": [
+                            {
+                                "name": "u_ilc/cur_state_reg[0]",
+                                "states": [
+                                    {
+                                        "name": "S_IDLE",
+                                        "val": "0000"
+                                    },
+                                    {
+                                        "name": "S_INIT_WEIGHT",
+                                        "val": "0001"
+                                    },
+                                    {
+                                        "name": "S_INIT_FMS",
+                                        "val": "0010"
+                                    },
+                                    {
+                                        "name": "S_INIT_MOVE_WEIGHT",
+                                        "val": "0011"
+                                    },
+                                    {
+                                        "name": "S_ITLC",
+                                        "val": "0100"
+                                    },
+                                    {
+                                        "name": "S_MOVE_WEIGHT",
+                                        "val": "0101"
+                                    },
+                                    {
+                                        "name": "S_WAIT_WEIGHT",
+                                        "val": "0110"
+                                    },
+                                    {
+                                        "name": "S_WAIT_INFER",
+                                        "val": "0111"
+                                    },
+                                    {
+                                        "name": "S_OUT_FMS",
+                                        "val": "1000"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

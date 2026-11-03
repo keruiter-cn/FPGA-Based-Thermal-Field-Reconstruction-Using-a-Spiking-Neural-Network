@@ -1,0 +1,37 @@
+# Vivado build products and local session state (regenerated from the project)
+**/.Xil/
+*.cache/
+*.runs/
+*.gen/
+*.hw/
+*.sim/
+*.ip_user_files/
+*.jou
+*.log
+*.str
+*.tmp
+*.lck
+*.wdb
+*.wlf
+vivado_*.backup.*
+/snn_top_v3/eth_ddr_test/*.rpt
+
+# Keep .xpr, .srcs, .xci, .xdc, .coe, imported .dcp and delivered .bit files.
+# Do not globally ignore .dcp: this project references checkpoints in .srcs.
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Editor and operating-system state
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+~$*
