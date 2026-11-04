@@ -1,0 +1,10 @@
+{
+  "name": "snn-ilc-95bit-v1",
+  "order": "msb-first",
+  "fields": [
+    ["weight_current",9],["weight_next",9],
+    ["first_layer",1],["last_layer",1],["bias",1],["conv",1],["convt",1],["cat",1],["avgpool",1],
+    ["out_groups",8],["shift",4],["write_uram",1],["read_uram",1],["uram_base",32],
+    ["in_groups",8],["fms_len",8],["fms_len_next",8]
+  ]
+}

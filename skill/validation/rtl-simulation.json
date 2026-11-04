@@ -1,0 +1,29 @@
+{
+  "status": "pass",
+  "scope": "new_reusable_RTL_template_simulation",
+  "tool": "Vivado Simulator 2023.1",
+  "commands": [
+    {
+      "command": "xvlog --sv spike_mac.sv tb_spike_mac.sv",
+      "exit_code": 0
+    },
+    {
+      "command": "xelab tb_spike_mac -s skill_mac_test",
+      "exit_code": 0
+    },
+    {
+      "command": "xsim skill_mac_test -runall",
+      "exit_code": 0
+    }
+  ],
+  "pass_marker": "SKILL_MAC_PASS accepted=193 checked=74 cycles=255",
+  "accepted_inputs": 193,
+  "checked_output_events": 74,
+  "observed_cycles": 255,
+  "source_sha256": {
+    "skill/rtl-design/assets/spike_mac.sv": "b704b307fa4349d267effd09b02c13e42cbbc5d511949fd08f2182f5056fce08",
+    "skill/rtl-design/assets/tb_spike_mac.sv": "4218ad6e1f585d1610882958357e17758c02c9910acf1b52abe3df1283d97e07"
+  },
+  "checked_at_utc": "2026-11-04T05:56:25.072330+00:00",
+  "limitations": "Template functionality only; no original all-mode PE proof, synthesis, timing, DDR/CDC, board or full-network accuracy check."
+}

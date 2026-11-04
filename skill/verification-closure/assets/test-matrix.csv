@@ -1,0 +1,11 @@
+scope,case,stimulus,expected_observation,coverage_limit
+PE,signed-boundary,all0-all1-mixed-and-negativeweights,integer-reference-and-cycle-match,not-full-network
+PE,control-alignment,continuous-bubbles-fire-last-clear,no-stale-valid-and-correct-result,no-backpressure-in-template
+BRC,spatial-boundary,nonsymmetric-small-map-padding-odd-size,address-and-window-reference,requires-operator-model
+BWC,writeback,last-pixel-last-timestep-and-clears,correct-bank-address-and-write-enable,requires-memory-model
+ILC,bank-switch,last-data-and-new-layer-adjacent,no-read-before-ready-no-overwrite,requires-completion-contract
+DDR,independent-ready,command-ready-and-data-ready-stall-separately,no-drop-no-duplicate-correct-done,requires-UI-model
+CDC,request-and-payload,phase-varying-clocks-and-reset,stable-payload-handshake-and-no-lost-event,simulation-not-metastability-proof
+system,numeric-comparison,same-input-fixedpoint-model-and-RTL,declared-numeric-tolerance,truth-only-does-not-isolate-RTL
+implementation,timing,setup-hold-pulsewidth-coverage-and-CDC,all-evidence-tied-to-same-build,no-bit-generation-shortcut
+GUI,async-identity,request-A-switch-B-then-reply-A,reply-stays-bound-to-A,host-id-not-board-proof

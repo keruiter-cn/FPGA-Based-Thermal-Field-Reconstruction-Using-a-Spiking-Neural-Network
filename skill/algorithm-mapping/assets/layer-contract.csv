@@ -1,0 +1,2 @@
+layer_id,operator,input_shape,output_shape,kernel_stride_padding,timestep,activation_kind,weight_format,bias_timing,acc_width,round_overflow,layout,storage,clear_condition,golden_source
+example-only,spike_dot,32binary,1acc,not-a-spatial-operator,3,binary-input,signed16,before-fire,32,ties-even-and-wrap,low-lane-first,local-acc,new-sample,integer-model

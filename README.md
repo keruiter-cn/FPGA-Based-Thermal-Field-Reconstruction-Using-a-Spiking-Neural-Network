@@ -24,6 +24,7 @@
 ```text
 fpga-contest/
 ├─ README.md                           # 项目介绍与复现说明
+├─ skill/                              # 开发技能包：算法映射、RTL、调度、通信、验证与 AI
 ├─ pc_python/
 │  ├─ requirements-host.txt             # 上位机基础依赖，PyTorch 另行安装
 │  ├─ socket/
@@ -70,6 +71,10 @@ Vivado 生成的 `.runs`、`.cache`、`.gen` 等目录为构建产物。源码�
 本次提交的单个文件均小于 100 MiB，直接通过普通 Git 保存，未使用 Git LFS，下载仓库即可取得实际材料。后续若增加超过 100 MiB 的文件，或频繁更新大型二进制文件，可改用 Git LFS；用于一次性交付的大型数据包也可放到 GitHub Release，并在此记录下载链接、版本和 SHA-256 校验值。GitHub 对普通 Git 文件超过 50 MiB 给出警告，超过 100 MiB 则拒绝接收，详见 [GitHub 大文件说明](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github)。
 
 交付可使用仓库页面的 **Code → Download ZIP**，或执行 `git clone`。请从仓库根目录开始使用，保留目录层级；仅下载 `.xpr` 无法复现工程。
+
+赛题 3.3.5.2 要求的开发技能包见 [skill/README.md](skill/README.md)，覆盖算法映射、RTL 数据通路、存储与层间调度、UDP 联调、仿真与实现验证、上位机与 AI 集成，包含可复制提示词、设计模板、脚本、适用边界和验证记录。
+
+大模型协作记录见 [协作报告](report/FPGA脉冲神经网络热场重建-大模型协作记录.md)，以依据项目实现编写的模拟使用记录展示算法映射、RTL 设计与调试、存储调度、通信及 AI 集成中的提示词、模型回答、反馈纠错和协作工作流，并单列已有验证证据。
 
 ## 3. 复现环境与材料
 

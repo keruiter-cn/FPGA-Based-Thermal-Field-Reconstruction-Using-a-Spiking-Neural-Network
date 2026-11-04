@@ -1,0 +1,3 @@
+data_id,producer,last_consumer,logical_bits,physical_ip,bank,write_clock,read_clock,address_unit,read_latency,retain_until,switch_condition,overflow_check
+example-weights,DDR,PE,fill-from-layer-table,256write-512read,ping-or-pong,DDR-UI,compute,define-per-port,fill-from-IP,last-PE-read,last-write-visible-and-old-reader-finished,check-max-address
+example-skip,encoder,decoder,fill-from-shape,URAM,layer-range,compute,compute,word,fill-from-IP,decoder-done,do-not-reuse-before-last-consumer,check-overlap

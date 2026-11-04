@@ -1,0 +1,176 @@
+{
+  "status": "pass",
+  "passed": 36,
+  "total": 36,
+  "cases": [
+    {
+      "case": "signed_complement_boundaries",
+      "status": "pass"
+    },
+    {
+      "case": "quantization_ties_even_and_saturation",
+      "status": "pass"
+    },
+    {
+      "case": "quantization_rejects_nan",
+      "status": "pass"
+    },
+    {
+      "case": "binary_spike_signed_dot",
+      "status": "pass"
+    },
+    {
+      "case": "binary_spike_rejects_nonbinary",
+      "status": "pass"
+    },
+    {
+      "case": "integer_reference_rejects_fractional_weight",
+      "status": "pass"
+    },
+    {
+      "case": "neuron_threshold_equal_fires_and_clears",
+      "status": "pass"
+    },
+    {
+      "case": "neuron_last_returns_signed_sum",
+      "status": "pass"
+    },
+    {
+      "case": "neuron_wrap_is_explicit",
+      "status": "pass"
+    },
+    {
+      "case": "weight_layout_known_nonrepeating_bytes",
+      "status": "pass"
+    },
+    {
+      "case": "weight_layout_roundtrip",
+      "status": "pass"
+    },
+    {
+      "case": "weight_layout_rejects_partial_word",
+      "status": "pass"
+    },
+    {
+      "case": "input_pair_little_endian",
+      "status": "pass"
+    },
+    {
+      "case": "input_pair_rejects_odd_count",
+      "status": "pass"
+    },
+    {
+      "case": "output_signed_decode_and_layout",
+      "status": "pass"
+    },
+    {
+      "case": "output_rejects_incomplete_frame",
+      "status": "pass"
+    },
+    {
+      "case": "output_rejects_nonfinite_scaling",
+      "status": "pass"
+    },
+    {
+      "case": "control_width_is_95",
+      "status": "pass"
+    },
+    {
+      "case": "control_field_all_ones_roundtrip",
+      "status": "pass"
+    },
+    {
+      "case": "control_overflow_rejected",
+      "status": "pass"
+    },
+    {
+      "case": "control_missing_field_rejected",
+      "status": "pass"
+    },
+    {
+      "case": "scoreboard_cycle_and_transaction_match",
+      "status": "pass"
+    },
+    {
+      "case": "scoreboard_rejects_wrong_data",
+      "status": "pass"
+    },
+    {
+      "case": "scoreboard_rejects_wrong_last",
+      "status": "pass"
+    },
+    {
+      "case": "scoreboard_rejects_wrong_identity",
+      "status": "pass"
+    },
+    {
+      "case": "scoreboard_rejects_wrong_latency",
+      "status": "pass"
+    },
+    {
+      "case": "scoreboard_rejects_missing_transaction",
+      "status": "pass"
+    },
+    {
+      "case": "scoreboard_rejects_empty_reference",
+      "status": "pass"
+    },
+    {
+      "case": "scoreboard_order_only_is_explicit",
+      "status": "pass"
+    },
+    {
+      "case": "async_frame_snapshot_and_batch_identity",
+      "status": "pass"
+    },
+    {
+      "case": "frame_snapshot_rejects_nonfinite_metrics",
+      "status": "pass"
+    },
+    {
+      "case": "csv_trace_valid_only_consumption",
+      "status": "pass"
+    },
+    {
+      "case": "csv_out_of_order_rejected",
+      "status": "pass"
+    },
+    {
+      "case": "coe_invalid_radix_word_rejected",
+      "status": "pass"
+    },
+    {
+      "case": "project_27_control_words_and_cli_roundtrip",
+      "status": "pass",
+      "detail": {
+        "actual_project_rows": 27,
+        "width": 95,
+        "scope": "bit-pattern-roundtrip-not-FSM-proof"
+      }
+    },
+    {
+      "case": "project_all_weight_words_match_export_layout",
+      "status": "pass",
+      "detail": {
+        "actual_project_weight_words": 218177,
+        "payload_bytes": 13963328,
+        "scope": "export-layout-equivalence-not-model-or-network-proof"
+      }
+    }
+  ],
+  "source_commit": "8b981bda95b8068fda45fc76df9c66d9313a1ffd",
+  "source_sha256": {
+    "snn_top_v3/eth_ddr_test/rtl/pe/pe.v": "6e69f2ae9df1a4ade075bb8001a38bec6ca4446c2c75021e9966c7fc2a02898c",
+    "snn_top_v3/eth_ddr_test/rtl/pe/pec.v": "7cf6134918841fb469bd7fe4ab39f3419b6ec73f2a71d7fb6730123effaf69f6",
+    "snn_top_v3/eth_ddr_test/rtl/pe/pp_wgt_buf.v": "7da035f327898baff55b1fde9a37897d3d568b606714097a910fb5ec6156dc91",
+    "snn_top_v3/eth_ddr_test/rtl/ilc/ilc.v": "f4433eafc967bc4db1c3fa844a94bbb6bfb72a827b7e43b3c75f5866d736dc4c",
+    "snn_top_v3/eth_ddr_test/rtl/fms/fms.v": "838d0161261456b986c3015d1f7e064d99e593bd97ec99f86792ff87396a95c6",
+    "snn_top_v3/eth_ddr_test/rtl/ddr/new/ddr_rwc.sv": "57608994facad3f0ce90cb07ca94de7647214f1238a6c3ce12554a8d3d773303",
+    "pc_python/pre_process/reverse_data.py": "ba4c7416dcc7b4c627aee53c71ae01577c3abbea66cb6842378e59123cd8251e",
+    "pc_python/socket/local_ai_client.py": "8ff7fc8e479196905d3052eba3a42166cd0f832770f698e16efa93c10e7761e3",
+    "file/coe/unet/SNNUnet_control_200-200_no_cat.coe": "e7f97b8a843cc5488cbf4edf7583e0c6f39a1306e42ad81afb9ea139a1f2562c"
+  },
+  "python_version": "3.11.8",
+  "checked_at_utc": "2026-11-04T05:56:24.922889+00:00",
+  "limitations": "Offline helper tests and real control/weight files; no original full-network RTL, training, board or AI-service execution."
+}
